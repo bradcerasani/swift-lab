@@ -15,3 +15,49 @@ for 💛 in 🌍 {
 }
 
 🚢
+
+// The Swift Programming Language
+
+// Use var for variables, let for constants.
+
+var myVariable = 42
+myVariable = 50
+let myConstant = 42
+
+// If initial value doesn't provide enough info, specify type after colon.
+
+let explicitFloat: Float = 4
+let explicitDouble: Double = 70
+
+// Values are never implicitly converted to another type. To convert, explicitly make an instance of the desired type.
+
+let label = "The height is "
+let width = 800
+let widthLabel = label + String(width)
+
+// Include values in strings with \(varName)
+
+let apples = 3
+let oranges = 5
+let appleSummary = "I have \(apples) apples."
+let orangeSummary = "I have \(oranges) oranges."
+let fruitSummary = "I have \(apples + oranges) pieces of fruit."
+
+// Creating arrays and dictionaries
+
+var shoppingList = ["eggs", "bacon", "batteries", "waffles"]
+
+shoppingList[0] = "chocolate"
+
+var occupations = [
+    "Michael Jackson": "Singer",
+    "T-Pain": "Rappa Ternt Sanga",
+]
+
+occupations["T-Pain"]
+
+
+
+
+
+
