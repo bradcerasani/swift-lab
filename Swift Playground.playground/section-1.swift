@@ -43,18 +43,30 @@ let appleSummary = "I have \(apples) apples."
 let orangeSummary = "I have \(oranges) oranges."
 let fruitSummary = "I have \(apples + oranges) pieces of fruit."
 
-// Creating arrays and dictionaries
-
+// define array
 var shoppingList = ["eggs", "bacon", "batteries", "waffles"]
 
 shoppingList[0] = "chocolate"
 
+
+// define dictionary
 var occupations = [
     "Michael Jackson": "Singer",
     "T-Pain": "Rappa Ternt Sanga",
 ]
 
-occupations["T-Pain"]
+occupations["Rick Ross"] = "Boss"
+
+// create empty array or dictionary
+let emptyArray = String[]()
+let emptyDictionary = Dictionary<String, Float>()
+
+// if type can be inferred, use [] for empty array and [:] for empty dictionary
+shoppingList = []
+storeLocations = [:]
+
+
+
 
 
 
