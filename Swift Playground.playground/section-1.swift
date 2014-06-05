@@ -61,9 +61,44 @@ occupations["Rick Ross"] = "Boss"
 let emptyArray = String[]()
 let emptyDictionary = Dictionary<String, Float>()
 
-// if type can be inferred, use [] for empty array and [:] for empty dictionary
+// if type can be inferred, use `[]` for empty array and `[:]` for empty dictionary
 shoppingList = []
-storeLocations = [:]
+occupations = [:]
+
+// --------------------
+// Control Flow
+// --------------------
+
+// Conditionals: `if` and `switch`
+// Loops: `for-in` and `while` and `do-while`
+
+let individualScores = [75, 43, 103, 87, 12]
+var teamScore = 0
+for score in individualScores {
+    if score > 50 {
+        teamScore += 3
+    } else {
+        teamScore += 1
+    }
+}
+
+teamScore
+
+// in `if` statement, conditional MUST be a Boolean
+
+var optionalString: String? = "Hello"
+optionalString == nil
+
+var optionalName: String? = "John Appleseed"
+var greeting = "Hello!"
+if let name = optionalName {
+    greeting = "Hello, \(name)"
+}
+
+
+
+
+
 
 
 
