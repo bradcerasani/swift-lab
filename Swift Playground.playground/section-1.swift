@@ -123,8 +123,33 @@ for (kind, numbers) in interestingNumbers {
 }
 largest
 
+// while loops reapeat a block of code until a condition changes
+var n = 2
+while n < 100 {
+    n = n * 2
+}
+n
 
+var m = 2
+do {
+    m = m * 2
+} while m < 100
+m
 
+// keep an index in a loop by using .. to make a range of indexs or by writing an explicit init, condition, and increment. These two loops do the same thing:
+
+var firstForLoop = 0
+for i in 0..3 {
+    firstForLoop += i
+}
+
+var secondForLoop = 0
+for var i = 0; i < 3; ++i {
+    secondForLoop += 1
+}
+secondForLoop
+
+// use .. to make a range that omits upper value, and ... to make a range that includes both values.
 
 
 
