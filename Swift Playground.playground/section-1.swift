@@ -85,7 +85,6 @@ for score in individualScores {
 teamScore
 
 // in `if` statement, conditional MUST be a Boolean
-
 var optionalString: String? = "Hello"
 optionalString == nil
 
@@ -95,8 +94,21 @@ if let name = optionalName {
     greeting = "Hello, \(name)"
 }
 
+// Switches support any kind of data and a wide variety of comparison operators
+let vegetable = "red pepper"
+switch vegetable {
+    case "celery":
+        let vegetableComment = "Add some raisins and make ants on a log."
+    case "cucumber", "watercress":
+        let vegetableComment = "That would make a good tea sandwich."
+    case let x where x.hasSuffix("pepper"):
+        let vegetableComment = "Is it a spicy \(x)?"
+    default:
+        let vegetableComment = "Everything tastes good in soup."
+}
 
-
+// use for-in to iterate over items in a dictionary
+let interesing
 
 
 

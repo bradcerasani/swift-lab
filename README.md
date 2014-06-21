@@ -1,6 +1,6 @@
 # Swift Lab
 
-A space for learning Apple's new programming language for iOS and OS X.
+A space for exploring Apple's new programming language.
 
 ### Helpful Links:
 
