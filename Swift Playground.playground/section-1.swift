@@ -4,18 +4,6 @@ import Cocoa
 
 var str = "Hello, playground"
 
-// Noah's Ark, in Swift (https://twitter.com/futurepaul/status/473902211463118848)
-
-let 🌍 = "🐶🐺🐱🐭🐹🐰🐸🐯🐨🐻🐷🐽🐮🐗🐵🐒🐴🐑🐘🐼🐧🐦🐤🐥🐣🐔🐍🐢🐛🐝🐜🐞🐌🐙🐚🐠🐟🐬🐳🐋🐄🐏🐀🐃🐅🐇🐉🐎🐐🐓🐕🐖🐁🐂🐲🐡🐊🐫🐪🐆🐈🐩"
-
-var 🚢: String[] = []
-
-for 💛 in 🌍 {
-    🚢.append(💛 + 💛)
-}
-
-🚢
-
 // The Swift Programming Language
 
 // Use var for variables, let for constants.
@@ -136,7 +124,7 @@ do {
 } while m < 100
 m
 
-// keep an index in a loop by using .. to make a range of indexs or by writing an explicit init, condition, and increment. These two loops do the same thing:
+// keep an index in a loop by using .. to make a range of indexs or by writing an explicit init, condition, and increment. use .. to make a range that omits upper value, and ... to make a range that includes both values. These two loops do the same thing:
 
 var firstForLoop = 0
 for i in 0..3 {
@@ -149,7 +137,44 @@ for var i = 0; i < 3; ++i {
 }
 secondForLoop
 
-// use .. to make a range that omits upper value, and ... to make a range that includes both values.
+// Functions and Closures
+
+//use func to declare a function. Use -> to separate param names and types from functions return type
+
+func greet(name: String, day: String) -> String {
+    return "Hello \(name), today is \(day)."
+}
+greet("Bob", "Sunday")
+
+// use a tuple to return multiple values from a function:
+func getGasPrices() -> (Double, Double, Double) {
+    return (3.59, 3.69, 3.79)
+}
+getGasPrices()
+
+// functions can take variable number of arguments, collecting them into an array:
+func sumOf(numbers: Int...) -> Int {
+    var sum = 0
+    for number in numbers {
+        sum += number
+    }
+    return sum
+}
+sumOf()
+sumOf(42, 597, 12)
+
+func averageOf(numbers: Int...) -> Int {
+    var sum = 0
+    var total = 0
+    for number in numbers {
+        sum += number
+        total = total + 1
+    }
+    return sum / total
+}
+averageOf(8, 3, 5, 6000)
+
+
 
 
 
