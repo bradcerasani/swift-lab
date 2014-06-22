@@ -172,14 +172,44 @@ func averageOf(numbers: Int...) -> Int {
     }
     return sum / total
 }
-averageOf(8, 3, 5, 6000)
+averageOf(8, 3, 5)
 
+// nested functions
 
+func returnFifteen() -> Int {
+    var y = 10
+    func add() {
+        y += 5
+    }
+    add()
+    return y
+}
+returnFifteen()
 
+// functions can return another function
+func makeIncrementer() -> (Int -> Int) {
+    func addOne(number: Int) -> Int {
+        return 1 + number
+    }
+    return addOne
+}
+var increment = makeIncrementer()
+increment(7)
 
-
-
-
+// functions can take another function as one of its arguments
+func hasAnyMatches(list: Int[], condition: Int -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }
+    return false
+}
+func lessThanTen(number: Int) -> Bool {
+    return number < 10
+}
+var numbers = [20, 19, 7, 12]
+hasAnyMatches(numbers, lessThanTen)
 
 
 
