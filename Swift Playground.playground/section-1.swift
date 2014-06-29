@@ -211,6 +211,17 @@ func lessThanTen(number: Int) -> Bool {
 var numbers = [20, 19, 7, 12]
 hasAnyMatches(numbers, lessThanTen)
 
+numbers.map({
+    (number: Int) -> Int in
+    let result = 3 * number
+    return result
+    })
+
+// refactor tractor
+numbers.map({ number in 3 * number})
+
+//refer to params by number instaed of name (works for short closures)
+sort([1, 5, 3, 12, 2]) { $0 > $1 }
 
 
 
