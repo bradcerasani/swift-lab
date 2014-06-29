@@ -223,6 +223,33 @@ numbers.map({ number in 3 * number})
 //refer to params by number instaed of name (works for short closures)
 sort([1, 5, 3, 12, 2]) { $0 > $1 }
 
+// Objects and Classes
+
+// use class followed by the class's name to create a class
+class Shape {
+    var numberOfSides = 0
+    func simpleDescription() -> String {
+        return "A shape with \(numberOfSides) sides."
+    }
+}
+
+var shape = Shape()
+shape.numberOfSides = 7
+var shapeDescription = shape.simpleDescription()
+
+class NamedShape {
+    var numberOfSides: Int = 0
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func simpleDescription() -> String {
+        return "A shape with \(numberOfSides) sides."
+    }
+}
+
 
 
 
